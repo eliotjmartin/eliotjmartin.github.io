@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Personal Portfolio</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- 
+
+A personal webpage!
+
+-->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<header>
+  <nav id="navbar">
+    <h3><i>&nbsp;&nbsp;&nbsp;Eliot J. Martin</i>
+      <ul>
+        <li><a class="nav-link" href="#welcome-section"> About </a></li>
+        <li><a class="nav-link" href="#projects"> Portfolio </a></li>
+        <li><a class="nav-link" href="#skills"> Skills </a></li>
+        <li><a class="nav-link" href="#contact"> Connect </a></li>
+      </ul></h3>
+        
+  </nav>
+</header>
+<main id="content">
+  <section id="welcome-section">
+    <h1>Hi! 👋</h1>
+    <p>My name is Eliot. I am working on my Bachelors degree at the University of Oregon where I’m pursuing two majors I am very passionate about: Data Science and Computer and Information Science.</p>
+    <p>I also love the outdoors! I enjoy backpacking, rafting, fishing, hiking, etc. </p>
+    <p>Feel free to ask me about either!</p>
+  </section>
+
+  <section id="projects">
+    <h2>My Portfolio!</h2>
+    <div class="projects-div">
+      <nav id="project-nav">
+        <a id="rest-api" class="project-tile" target="_blank" href="https://github.com/eliotjmartin/RestApi">Flask Web API</a><br>
+        <p>This is a reimplementation of the RUSA ACP controle time calculator (<a href="https://rusa.org/octime_acp.html" target="_blank">See here</a>). There are three main parts to this calculator: <ul>
+          <li>The main API that allows the users to enter specific times and distances onto an HTML page that updates with calculated open/close times using jQuery. Upon hitting the submit button at the bottom of the sheet, the calculated open and close times are inserted into a MongoDB database. Finally, by hitting the display button, open and close values are printed on an separate HTML page.</li>
+        <li>The RESTful API that returns the calculated open and close times in csv or json format (assuming there is a logged in user) from the database.</li>
+          <li>The consumer program with a logged in interface and a logged out interface. To log in, one needs to register. Registering adds the user to the database. Once registered, the user can log in and access new information. Token-based authentication is used to protect user information in the database. The Logged in interface will give the user the option to visit a secret page where they can access the contents of the database via the REST API. </li>
+        </ul></p><br><br>
+        <a id="cache-simulator" class="project-tile" target="_blank" href="https://github.com/eliotjmartin/Cache-Simulator">Cache Simulator</a><br>
+      <p>This project simulates direct-mapped cache with 16 sets and 4 byte blocks!</p><br>
+        <a id="profile-link" class="project-tile" target="_blank" href="https://github.com/eliotjmartin">More Projects Here!</a><br>
+      </nav>
+    </div>
+  </section>
+  
+  <section id="skills">
+    <h2>My Skills</h2>
+    <p>I love Python! I have used it in my CIS work and my Data Scince work; I think it is the best language. I prefer development in Linux (Ubuntu) environments but I like Windows too.
+    </p>
+    <p>I am also comfortable with C, HTML, and CSS. I have used other tech, too, including Docker, MongoDB, GIT and Tablaeu!</p>
+    <p>I love Math as well! In school I have taken courses in statistics, calculus, linear algebra, and discrete math.</p>
+  </section>
+  
+  <section id="contact">
+    <h2>Connect With Me!</h2>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/eliotjmartin/" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+      <li><a href="mailto: eliotm@uoregon.edu" target="_blank"><i class="fa fa-envelope"></i></a></li>
+      <li><a href="https://github.com/eliotjmartin" target="_blank"><i class="fa fa-github"></i></a></li>
+    </ul>
+    </ul>
+    
+    
+  </section>
+</main>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
